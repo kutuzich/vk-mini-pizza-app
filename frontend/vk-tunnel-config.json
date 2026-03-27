@@ -1,0 +1,8 @@
+{
+  "app_id": 54470039,
+  "port": 5173,
+  "host": "localhost",
+  "http-protocol": "http",
+  "ws-protocol": "ws",
+  "insecure": 1
+}
