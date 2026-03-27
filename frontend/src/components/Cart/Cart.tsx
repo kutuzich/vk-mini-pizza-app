@@ -63,7 +63,7 @@ function getTodayISO(): string {
 
 function isTodayWorkingDay(): boolean {
   const dow = new Date().getDay();
-  return dow === 2 || dow === 3 || dow === 4 || dow === 6;
+  return dow === 2 || dow === 3 || dow === 4 || dow === 5 || dow === 6;
 }
 
 function formatPhone(value: string): string {
@@ -370,7 +370,7 @@ export function Cart({ isOpen, onClose }: CartProps) {
                   <div className={styles.sectionTitle}>Время доставки</div>
                   {!workingDay ? (
                     <div className={styles.noSlots}>
-                      Сегодня нерабочий день. Заказы принимаются: Вт-Чт, Сб
+                      Сегодня нерабочий день. Заказы принимаются: Вт-Пт, Сб
                     </div>
                   ) : slots.length === 0 ? (
                     <div className={styles.noSlots}>Нет доступных слотов</div>

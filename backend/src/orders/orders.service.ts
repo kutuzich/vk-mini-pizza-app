@@ -10,7 +10,7 @@ function getSlotsForDay(dayOfWeek: number): string[] {
   if (dayOfWeek >= 2 && dayOfWeek <= 4) {
     return Array.from({ length: 9 }, (_, i) => `${12 + i}:00-${13 + i}:00`);
   }
-  if (dayOfWeek === 6) {
+  if (dayOfWeek === 5 || dayOfWeek === 6) {
     return Array.from({ length: 10 }, (_, i) => `${12 + i}:00-${13 + i}:00`);
   }
   return [];
